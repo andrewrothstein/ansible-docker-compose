@@ -1,0 +1,14 @@
+---
+- name: downloading docker-compose...
+  get_url: >-
+    url='{{docker_compose_url}}'
+    dest='/usr/local/bin/{{docker_compose_install_exe}}'
+    mode=0755
+    owner=root
+    group=root
+
+- name: link /usr/local/bin/docker-compose
+  file: >-
+    src='/usr/local/bin/{{docker_compose_install_exe}}'
+    dest='/usr/local/bin/docker-compose'
+    state=link
