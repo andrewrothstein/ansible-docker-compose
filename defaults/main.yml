@@ -1,4 +1,4 @@
 ---
-docker_compose_ver : '1.5.2'
+docker_compose_ver : '1.6.2'
 docker_compose_platform : 'Linux-x86_64'
 docker_compose_mirror : 'https://github.com/docker/compose/releases/download'
