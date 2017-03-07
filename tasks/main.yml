@@ -1,14 +1,17 @@
 ---
 - name: downloading docker-compose...
-  get_url: >-
-    url='{{docker_compose_url}}'
-    dest='/usr/local/bin/{{docker_compose_install_exe}}'
-    mode=0755
-    owner=root
-    group=root
+  become: yes
+  become_user: root
+  get_url:
+    url: '{{docker_compose_url}}'
+    dest: '{{docker_compose_install_dir}}/{{docker_compose_install_exe}}'
+    checksum: '{{docker_compose_checksum}}'
+    mode: 0755
 
 - name: link /usr/local/bin/docker-compose
-  file: >-
-    src='/usr/local/bin/{{docker_compose_install_exe}}'
-    dest='/usr/local/bin/docker-compose'
-    state=link
+  become: yes
+  become_user: root
+  file:
+    src: '{{docker_compose_install_dir}}/{{docker_compose_install_exe}}'
+    dest: '{{docker_compose_install_dir}}/docker-compose'
+    state: link

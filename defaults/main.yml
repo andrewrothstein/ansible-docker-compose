@@ -1,4 +1,9 @@
 ---
-docker_compose_ver : '1.7.1'
-docker_compose_platform : 'Linux-x86_64'
-docker_compose_mirror : 'https://github.com/docker/compose/releases/download'
+docker_compose_ver : '1.11.2'
+docker_compose_platform : Linux-x86_64
+docker_compose_checksums:
+  Darwin-x86_64: sha256:8cd11a7e0e5d4e6ae102ed204ddc1430ae65f21e8b060735ed132fb53dc1ade5
+  Linux-x86_64: sha256:8d55adce12461c9f2abd907da1138b3e925919212611a54c94c4794ab0a975fc
+docker_compose_mirror : https://github.com/docker/compose/releases/download
+docker_compose_install_dir: /usr/local/bin
+
