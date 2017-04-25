@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-compose.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-compose)
 andrewrothstein.docker-compose
 ===========================
 
