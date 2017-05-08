@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-compose.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-compose)
 andrewrothstein.docker-compose
 ===========================
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-compose.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-compose)
 
 A role for installing [docker-compose](https://github.com/docker/compose)
 

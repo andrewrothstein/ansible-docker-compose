@@ -19,6 +19,9 @@ galaxy_info:
       versions:
         - trusty
         - xenial
+    - name: Debian
+      versions:
+        - jessie
     - name: Alpine
       versions:
         - all
