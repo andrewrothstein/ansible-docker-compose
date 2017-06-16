@@ -8,3 +8,4 @@ docker_compose_checksums:
 docker_compose_mirror : https://github.com/docker/compose/releases/download
 docker_compose_install_dir: /usr/local/bin
 
+docker_compose_bash_completion_d: /etc/bash_completion.d

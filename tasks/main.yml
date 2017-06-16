@@ -15,3 +15,11 @@
     src: '{{docker_compose_install_dir}}/{{docker_compose_install_exe}}'
     dest: '{{docker_compose_install_dir}}/docker-compose'
     state: link
+
+- name: install bash completions...
+  become: yes
+  become_user: root
+  get_url:
+    url: https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose
+    dest: '{{docker_compose_bash_completion_d}}/docker-compose.sh'
+    mode: 0644

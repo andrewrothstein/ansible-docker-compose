@@ -28,5 +28,7 @@ galaxy_info:
   galaxy_tags:
     - development
 
-dependencies: []
+dependencies:
+  - src: andrewrothstein.bash
+    version: v1.0.4
   
