@@ -1,9 +1,6 @@
 ---
 docker_compose_exe : 'docker-compose-{{docker_compose_platform}}'
 
-# https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Darwin-x86_64
-# https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Linux-x86_64
-# https://github.com/docker/compose/releases/download/1.14.0/docker-compose-Windows-x86_64.exe
 docker_compose_url : '{{docker_compose_mirror}}/{{docker_compose_ver}}/{{docker_compose_exe}}'
 docker_compose_install_exe : 'docker-compose-{{docker_compose_ver}}'
 docker_compose_checksum: '{{docker_compose_checksums[docker_compose_platform]}}'
