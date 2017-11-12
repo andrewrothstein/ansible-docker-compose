@@ -30,4 +30,4 @@ galaxy_info:
 
 dependencies:
   - src: andrewrothstein.bash
-    version: v1.0.4
+    version: v1.1.0

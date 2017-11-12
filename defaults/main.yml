@@ -1,12 +1,16 @@
 ---
-docker_compose_ver : '1.16.1'
-docker_compose_platform : Linux-x86_64
-docker_compose_checksums:
-  Darwin-x86_64: sha256:9af53190d686697cc0bf86f284b1b8031818d961cd5875d6cf72dc19d67f48ca
-  Linux-x86_64: sha256:1804b0ce6596efe707b9cab05d74b161833ed503f0535a937dd5d17bea8fc50a
-  Windows-x86_64: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+docker_compose_ver : '1.17.1'
 
 docker_compose_mirror : https://github.com/docker/compose/releases/download
+
+docker_compose_platform : Linux-x86_64
+
+# https://github.com/docker/compose/releases/
+docker_compose_checksums:
+  Darwin-x86_64: sha256:63de322e15539cf30d632758fc5339b60f32eb937ec17b4595a6a34b9d84484a
+  Linux-x86_64: sha256:db0a7b79d195dc021461d5628a8d53eeb2e556d2548b764770fccabb0a319dd8
+  Windows-x86_64: sha256:86a9e5193628e93ab73fd0b7438e954f25ae68da45ab3b6ab10dda3f307bb21c
+
 docker_compose_install_dir: /usr/local/bin
 
 docker_compose_bash_completion_d: /etc/bash_completion.d
