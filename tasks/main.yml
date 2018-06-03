@@ -1,4 +1,18 @@
 ---
+- name: check if pip itself is installed
+  command: "pip --version"
+  ignore_errors: true
+  changed_when: false
+  check_mode: no
+  register: pip_is_installed
+
+- name: ensure pip version of compose is not installed
+  pip:
+    name: docker-compose
+    state: absent
+  when: pip_is_installed.rc == 0
+  become: yes
+
 - name: downloading docker-compose...
   become: yes
   become_user: root
