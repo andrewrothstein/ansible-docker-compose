@@ -1,9 +1,9 @@
 ---
-docker_compose_ver : '1.21.2'
+docker_compose_ver: '1.22.0'
 
-docker_compose_mirror : https://github.com/docker/compose/releases/download
+docker_compose_mirror: https://github.com/docker/compose/releases/download
 
-docker_compose_platform : Linux-x86_64
+docker_compose_platform: Linux-x86_64
 
 # https://github.com/docker/compose/releases/
 docker_compose_checksums:
@@ -48,6 +48,13 @@ docker_compose_checksums:
     Linux-x86_64: sha256:8a11713e11ed73abcb3feb88cd8b5674b3320ba33b22b2ba37915b4ecffdf042
     # curl -sSL https://github.com/docker/compose/releases/download/1.21.2/docker-compose-Windows-x86_64.exe.sha256
     Windows-x86_64: sha256:6f515b821fcbb3e07fdab8ce6da74b9e77ab743ae141d4670280fd26f95af7ef
+  '1.22.0':
+    # curl -sSL https://github.com/docker/compose/releases/download/1.22.0/docker-compose-Darwin-x86_64.sha256
+    Darwin-x86_64: sha256:4c89bbadc5879cb4c9396f8b469c4a6bfb2a82452aa82d0290d78f18efba36e6
+    # curl -sSL https://github.com/docker/compose/releases/download/1.22.0/docker-compose-Linux-x86_64.sha256
+    Linux-x86_64: sha256:f679a24b93f291c3bffaff340467494f388c0c251649d640e661d509db9d57e9
+    # curl -sSL https://github.com/docker/compose/releases/download/1.22.0/docker-compose-Windows-x86_64.exe.sha256
+    Windows-x86_64: sha256:a828b92e52d49427790b8ede88072f3d21315dca8123d789a5ceb0e01dc9890f
 
 docker_compose_install_dir: /usr/local/bin
 
