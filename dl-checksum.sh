@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=1.23.2
+VER=1.24.0
 DIR=~/Downloads
 MIRROR=https://github.com/docker/compose/releases/download
 APP=docker-compose
