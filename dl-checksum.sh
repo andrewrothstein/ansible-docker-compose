@@ -1,11 +1,23 @@
 #!/usr/bin/env sh
-VER=1.24.0
+VER=1.24.1
 DIR=~/Downloads
-MIRROR=https://github.com/docker/compose/releases/download
-APP=docker-compose
-for platform in Darwin-x86_64 Linux-x86_64 Windows-x86_64
-do
-    wget -O $DIR/$APP-$platform.$VER $MIRROR/$VER/$APP-$platform
-done
-sha256sum $DIR/$APP-*.$VER
-#shasum -a 256 $DIR/$APP-*.$VER
+MIRROR=https://github.com/docker/compose/releases/download/$VER
+
+dl()
+{
+    OS=$1
+    ARCH=$2
+    SUFFIX=${3:-}
+    SHAFILE=docker-compose-${OS}-${ARCH}${SUFFIX}.sha256
+    URL=$MIRROR/$SHAFILE
+
+    printf "    # %s\n" $URL
+    printf "    %s-%s: sha256:%s\n" $OS $ARCH `curl -sSL $URL | awk '{print $1}'`
+}
+
+printf "  '%s':\n" $VER
+dl Darwin x86_64
+dl Linux x86_64
+dl Windows x86_64 .exe
+
+
