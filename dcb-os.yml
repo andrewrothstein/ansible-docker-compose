@@ -1,3 +1,4 @@
+- alpine_3.10
 - alpine_3.3
 - alpine_3.4
 - alpine_3.5
@@ -19,6 +20,9 @@
 - fedora_28
 - fedora_29
 - fedora_30
+- fedora_31
+- fedora_32
+- ubi8_8.0
 - ubuntu_bionic
 - ubuntu_trusty
 - ubuntu_xenial
