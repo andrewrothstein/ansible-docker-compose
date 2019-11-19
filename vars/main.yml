@@ -1,6 +1,7 @@
 ---
-docker_compose_exe: 'docker-compose-{{docker_compose_platform}}'
+docker_compose_platform: '{{ docker_compose_os }}-{{ docker_compose_arch }}'
+docker_compose_exe: 'docker-compose-{{ docker_compose_platform }}'
 
-docker_compose_url: '{{docker_compose_mirror}}/{{docker_compose_ver}}/{{docker_compose_exe}}'
-docker_compose_install_exe: 'docker-compose-{{docker_compose_ver}}'
-docker_compose_checksum: '{{docker_compose_checksums[docker_compose_ver][docker_compose_platform]}}'
+docker_compose_url: '{{ docker_compose_mirror }}/{{ docker_compose_ver }}/{{ docker_compose_exe }}'
+docker_compose_install_exe: 'docker-compose-{{ docker_compose_ver }}'
+docker_compose_checksum: '{{ docker_compose_checksums[docker_compose_ver][docker_compose_platform] }}'

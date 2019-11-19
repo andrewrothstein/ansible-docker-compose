@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=${1:-1.24.1}
+VER=${1:-1.25.0}
 DIR=~/Downloads
 MIRROR=https://github.com/docker/compose/releases/download/$VER
 
