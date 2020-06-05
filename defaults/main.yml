@@ -1,5 +1,5 @@
 ---
-docker_compose_ver: '1.25.5'
+docker_compose_ver: 1.26.0
 
 docker_compose_mirror: https://github.com/docker/compose/releases/download
 
@@ -143,3 +143,10 @@ docker_compose_checksums:
     Linux-x86_64: sha256:1cb7ecccc17c8d5f1888f9e2b3211b07e35c86d0010a6c0f711fe65ef5b69528
     # https://github.com/docker/compose/releases/download/1.25.5/docker-compose-Windows-x86_64.exe.sha256
     Windows-x86_64: sha256:0889c411f88e631c7dff0f0bc18fae3040ed8b6a951f316637e91c5293a5085c
+  '1.26.0':
+    # https://github.com/docker/compose/releases/download/1.26.0/docker-compose-Darwin-x86_64.sha256
+    Darwin-x86_64: sha256:706bb895ec438d95b3680c5e832ecf263a5dcefedcee1f4a106bf5ea85ae8411
+    # https://github.com/docker/compose/releases/download/1.26.0/docker-compose-Linux-x86_64.sha256
+    Linux-x86_64: sha256:ff6816932a57eab448798105926adbe4363b82f217802b105ade2edad95706cb
+    # https://github.com/docker/compose/releases/download/1.26.0/docker-compose-Windows-x86_64.exe.sha256
+    Windows-x86_64: sha256:4a1963d06467ad1c51dd5f53f4b3517f3440cfbb4502e853d3602896f247eaa4
