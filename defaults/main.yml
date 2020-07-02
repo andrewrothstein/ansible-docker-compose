@@ -150,3 +150,10 @@ docker_compose_checksums:
     Linux-x86_64: sha256:ff6816932a57eab448798105926adbe4363b82f217802b105ade2edad95706cb
     # https://github.com/docker/compose/releases/download/1.26.0/docker-compose-Windows-x86_64.exe.sha256
     Windows-x86_64: sha256:4a1963d06467ad1c51dd5f53f4b3517f3440cfbb4502e853d3602896f247eaa4
+  '1.26.1':
+    # https://github.com/docker/compose/releases/download/1.26.1/docker-compose-Darwin-x86_64.sha256
+    Darwin-x86_64: sha256:062b63a905ce08b5df0c9aee66008f8049344badc3d3115e2e6e458d215106f5
+    # https://github.com/docker/compose/releases/download/1.26.1/docker-compose-Linux-x86_64.sha256
+    Linux-x86_64: sha256:b1c7e9b835dd6a4e6436772fe984bf52c93c13149a6b6d06616c7eda1f66123b
+    # https://github.com/docker/compose/releases/download/1.26.1/docker-compose-Windows-x86_64.exe.sha256
+    Windows-x86_64: sha256:5d36534435ccca6507764a8f970de1c8640f7a8ad01be0af2a3449585e812bf8
