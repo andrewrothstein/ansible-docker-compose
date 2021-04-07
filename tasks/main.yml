@@ -1,25 +1,25 @@
 ---
-- name: downloading docker-compose...
+- name: downloading {{ docker_compose_url }} to {{ docker_compose_install_fq_exe }}
   become: yes
   become_user: root
   get_url:
     url: '{{ docker_compose_url }}'
-    dest: '{{ docker_compose_install_dir }}/{{ docker_compose_install_exe }}'
+    dest: '{{ docker_compose_install_fq_exe }}'
     checksum: '{{ docker_compose_checksum }}'
     mode: 0755
 
-- name: link /usr/local/bin/docker-compose
+- name: linking {{ docker_compose_install_fq_link }} to {{ docker_compose_install_fq_exe }}
   become: yes
   become_user: root
   file:
-    src: '{{ docker_compose_install_dir }}/{{ docker_compose_install_exe }}'
-    dest: '{{ docker_compose_install_dir }}/docker-compose'
+    src: '{{ docker_compose_install_fq_exe }}'
+    dest: '{{ docker_compose_install_fq_link }}'
     state: link
 
-- name: install bash completions...
+- name: install bash completions from {{ docker_compose_bash_completions_url }} to {{ docker_compose_bash_completions_fq }}
   become: yes
   become_user: root
   get_url:
-    url: https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose
-    dest: '{{ docker_compose_bash_completion_d }}/docker-compose.sh'
+    url: '{{ docker_compose_bash_completions_url }}'
+    dest: '{{ docker_compose_bash_completions_fq }}'
     mode: 0644
