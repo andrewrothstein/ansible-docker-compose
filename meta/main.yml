@@ -1,6 +1,8 @@
 dependencies:
 - role: andrewrothstein.bash
   version: v1.1.7
+- role: andrewrothstein.alpine-glibc-shim
+  version: v2.0.14
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
