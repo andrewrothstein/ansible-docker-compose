@@ -1,6 +1,4 @@
 dependencies:
-- role: andrewrothstein.bash
-  version: v1.1.8
 - role: andrewrothstein.alpine-glibc-shim
   version: v2.0.15
 galaxy_info:

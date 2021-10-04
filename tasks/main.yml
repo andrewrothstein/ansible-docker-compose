@@ -1,6 +1,14 @@
 ---
+- name: mkdir {{ docker_compose_eff_install_dir }}
+  become: true
+  become_user: root
+  file:
+    path: '{{ docker_compose_eff_install_dir }}'
+    state: directory
+    mode: 0755
+
 - name: downloading {{ docker_compose_url }} to {{ docker_compose_install_fq_exe }}
-  become: yes
+  become: true
   become_user: root
   get_url:
     url: '{{ docker_compose_url }}'
@@ -9,17 +17,9 @@
     mode: 0755
 
 - name: linking {{ docker_compose_install_fq_link }} to {{ docker_compose_install_fq_exe }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ docker_compose_install_fq_exe }}'
     dest: '{{ docker_compose_install_fq_link }}'
     state: link
-
-- name: install bash completions from {{ docker_compose_bash_completions_url }} to {{ docker_compose_bash_completions_fq }}
-  become: yes
-  become_user: root
-  get_url:
-    url: '{{ docker_compose_bash_completions_url }}'
-    dest: '{{ docker_compose_bash_completions_fq }}'
-    mode: 0644

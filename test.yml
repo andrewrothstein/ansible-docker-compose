@@ -1,10 +1,11 @@
 ---
 - hosts: all
   roles:
+    - role: andrewrothstein.docker-binaries
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: /usr/local/bin/docker-compose --version
+    - command: docker compose version
       register: docker_compose_test_output
-    - name: docker-compose --version
+    - name: docker compose version
       debug:
         msg: '{{ docker_compose_test_output.stdout }}'
