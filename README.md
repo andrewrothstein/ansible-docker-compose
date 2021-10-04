@@ -1,8 +1,8 @@
 andrewrothstein.docker-compose
 ===========================
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-docker-compose.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-docker-compose)
+![Build Status](https://github.com/andrewrothstein/ansible-docker-compose/actions/workflows/build.yml/badge.svg)
 
-A role for installing [docker-compose](https://github.com/docker/compose)
+Installs [docker-compose](https://github.com/docker/compose).
 
 Requirements
 ------------
