@@ -1,5 +1,5 @@
 ---
-docker_compose_ver: 2.1.1
+docker_compose_ver: 2.2.2
 
 docker_compose_mirror: https://github.com/docker/compose/releases/download
 
@@ -33,3 +33,24 @@ docker_compose_checksums:
     linux-x86_64: sha256:dad12a5cbc4dae3809138c070c06abe4a92ce3470679a0f67da920052b6e51c7
     # https://github.com/docker/compose/releases/download/v2.1.1/docker-compose-windows-x86_64.exe.sha256
     windows-x86_64: sha256:4be9b3e743455ef0663d6240ca70dbd61af8a8f2bf390e0d5c912befb4e0aa85
+  '2.2.0':
+    # https://github.com/docker/compose/releases/download/v2.2.0/docker-compose-darwin-x86_64.sha256
+    darwin-x86_64: sha256:ff4dc3c373ef01af96d5524835a4bab68c44036d28de03dda1726cf426b56384
+    # https://github.com/docker/compose/releases/download/v2.2.0/docker-compose-linux-x86_64.sha256
+    linux-x86_64: sha256:73118e56306ec6b8bf8397b41b34931a0a4f8448d1332566b3a6334a5d096f2c
+    # https://github.com/docker/compose/releases/download/v2.2.0/docker-compose-windows-x86_64.exe.sha256
+    windows-x86_64: sha256:61009c5f69dada76a0c79dc1f60e2df53e20339f60c84cc568939dff9d79aafa
+  '2.2.1':
+    # https://github.com/docker/compose/releases/download/v2.2.1/docker-compose-darwin-x86_64.sha256
+    darwin-x86_64: sha256:8bd85fdc020cd9e4a375618b3bb45a8ab2aadf072ea65901208f52b8094dd5e7
+    # https://github.com/docker/compose/releases/download/v2.2.1/docker-compose-linux-x86_64.sha256
+    linux-x86_64: sha256:68a3bb67bd25abf0f6da2a9d171a873ac182c3cc1c51fb4866e7770675823d2f
+    # https://github.com/docker/compose/releases/download/v2.2.1/docker-compose-windows-x86_64.exe.sha256
+    windows-x86_64: sha256:dd3b0114b67f6e7097ec446f35c322935525e85307d525ce146d316c619fe816
+  '2.2.2':
+    # https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-darwin-x86_64.sha256
+    darwin-x86_64: sha256:f9c72b3950a8846682f5cbccda27323b427dd2636611af22461c21444f019691
+    # https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-linux-x86_64.sha256
+    linux-x86_64: sha256:92551cd3d22b41536ce8345fe06795ad0d08cb3c17b693ecbfe41176e501bfd4
+    # https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-windows-x86_64.exe.sha256
+    windows-x86_64: sha256:77496c57449437194add809f10634fca96b9253433809446b6986e709fc8c032
