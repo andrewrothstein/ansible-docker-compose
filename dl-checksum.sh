@@ -14,7 +14,7 @@ dl()
     local url=$MIRROR/v$ver/$shafile
 
     printf "    # %s\n" $url
-    printf "    %s-%s: sha256:%s\n" $os $arch $(curl -sSL $url | awk '{print $1}')
+    printf "    %s-%s: sha256:%s\n" $os $arch $(curl -sSLf $url | awk '{print $1}')
 }
 
 dl_ver() {
@@ -25,4 +25,4 @@ dl_ver() {
     dl $ver windows x86_64 .exe
 }
 
-dl_ver ${1:-2.2.2}
+dl_ver ${1:-2.3.0}
