@@ -1,4 +1,7 @@
 ---
+docker_compose_os: '{{ ansible_system | lower }}'
+docker_compose_arch: '{{ ansible_architecture }}'
+
 docker_compose_platform: '{{ docker_compose_os }}-{{ docker_compose_arch }}'
 docker_compose_exe: 'docker-compose-{{ docker_compose_platform }}'
 
