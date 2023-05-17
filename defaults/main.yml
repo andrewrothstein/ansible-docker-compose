@@ -1,5 +1,5 @@
 ---
-docker_compose_ver: 2.17.2
+docker_compose_ver: 2.18.0
 
 docker_compose_mirror: https://github.com/docker/compose/releases/download
 
@@ -593,3 +593,26 @@ docker_compose_checksums:
     windows-aarch64: sha256:0d35207b27522202d9b74173700c2e20dc61ce3df970a05c4367e27d8dead29c
     # https://github.com/docker/compose/releases/download/v2.17.2/docker-compose-windows-x86_64.exe
     windows-x86_64: sha256:0869cfe9d799d511e4eaf87029ed08ea256e7000f312023c062d7ddcadc385db
+  '2.18.0':
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-darwin-aarch64
+    darwin-aarch64: sha256:6b22a7f04ebc4693a60e3e6ae248c2cee715b69cef740d1ad39e520fbc632922
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-darwin-x86_64
+    darwin-x86_64: sha256:42036608e33e8e905f0683693109d0a8f126a66d2e534611b15919e0ea32b35c
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-aarch64
+    linux-aarch64: sha256:60444f990cd2e87cb1f3b5093d88afa6c8f58cb9c5477fdb31ff894deaee17c6
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-armv6
+    linux-armv6: sha256:58cabf4745c8878a178e4283b5f272eb46fc4cb42b12ac47a487085838ae4a6c
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-armv7
+    linux-armv7: sha256:9e2dc7e0f7d572e6733ba9d66d8ffa063c66c00a262e138a1df5b324c4580e9d
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-ppc64le
+    linux-ppc64le: sha256:18a29f9f67ce1c3afbfc4720194db1002feae681d78469ed0cd39e04da009761
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-riscv64
+    linux-riscv64: sha256:c5ef1f3cb9bf2ab9f232f993d640c3f872d573494ad6b3081e6b8bc45bc58fe1
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-s390x
+    linux-s390x: sha256:51af79cf31b0916f40ed3d0bef30a71a03dea1d794458a5c62770c3d8e1efce5
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-x86_64
+    linux-x86_64: sha256:02b69f1f23167fce126b16d9d6b645362f5a6fa7fc9a073d3d080e45e12d32fc
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-windows-aarch64.exe
+    windows-aarch64: sha256:a20adfd1ba8fd1c16873fe28c3637ca7c5bca68cbd928038574b343417f46b56
+    # https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-windows-x86_64.exe
+    windows-x86_64: sha256:a98df8912c7a5cc7be00c1819a920e0ecdd5e2a7402bb390606c7f3f3b28b24e
